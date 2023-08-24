@@ -4,12 +4,14 @@
   "description": "Basic Unittests fo Javascript",
   "main": "0-calcul.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "mocha"
   },
   "author": "Moses-Morris",
   "license": "MIT",
   "dependencies": {
-    "chai": "^4.3.7",
+    "chai": "^4.3.7"
+  },
+  "devDependencies": {
     "mocha": "^10.2.0"
   }
 }
