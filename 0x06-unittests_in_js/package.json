@@ -1,19 +1,20 @@
 {
   "name": "0x06-unittests_in_js",
   "version": "1.0.0",
-  "description": "Test Basic ",
+  "description": "",
   "main": "0-calcul.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "assert": "^2.0.0",
     "chai": "^4.3.7",
     "sinon": "^15.2.0"
   },
   "devDependencies": {
-    "mocha": "^10.2.0"
-  }
+    "mocha": "^6.2.3"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
