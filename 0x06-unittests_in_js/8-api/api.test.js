@@ -1,12 +1,19 @@
-const request = require('supertest');
-const app = require('./api'); // Import your Express app
+const request = require('request');
+const { expect } = require('chai');
 
-describe('API Test Suite', function() {
-  it('should respond with status code 200 and correct result on index page', function(done) {
-    request(app)
-      .get('/')
-      .expect(200) // Expected status code
-      .expect('Welcome to the paymnet system') // Expected response text
-      .end(done); // Call done to indicate test completion
+describe('Integration Testing', () => {
+  describe('GET /', () => {
+    it('Code: 200 | Body: Welcome to the payment system', (done) => {
+      const options = {
+        url: 'http://localhost:7865',
+        method: 'GET',
+      };
+
+      request(options, function (error, response, body) {
+        expect(response.statusCode).to.equal(200);
+        expect(body).to.equal('Welcome to the payment system');
+        done();
+      });
+    });
   });
 });
