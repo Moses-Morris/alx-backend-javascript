@@ -4,7 +4,7 @@
   "description": "Basic Unittests fo Javascript",
   "main": "0-calcul.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "author": "Moses-Morris",
   "license": "MIT",
